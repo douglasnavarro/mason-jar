@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mason Jar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Mason Jar API</h1>
+        <h4>Endpoints:</h3>
+        <ul class="browser-default">
+            <li>
+                /api/artist
+                <p>
+                    Returns 15 top songs for that artist. Example:
+                    <br>
+                    <code>
+                        <br>
+                        <a href="/api/ed-sheeran"><b>GET /api/ed-sheeran HTTP/1.1</b></a>
+                    </code>
+                </p>
+            </li>
+            <li>
+                /api/artist?count=number
+                <p>
+                    Returns <b>number</b> top songs for that artist. Example:
+                    <br>
+                    <code>
+                        <br>
+                        <a href="/api/ed-sheeran?count=3"><b>GET /api/ed-sheeran?count=3 HTTP/1.1</b></a>
+                    </code>
+                </p>
+            </li>
+            <li>
+                /api/artist/all
+                <p>
+                    Returns <b>all</b> songs for that artist. Example:
+                    <br>
+                    <code>
+                        <br>
+                        <a href="/api/ed-sheeran/all"><b>GET /api/ed-sheeran/all HTTP/1.1</b></a>
+                    </code>
+                </p>
+            </li>
+            <li>
+                /api/artist/first_letter
+                <p>
+                    Returns songs for that artist but with title starting with <b>first_letter</b>. Example:
+                    <br>
+                    <code>
+                        <br>
+                        <a href="/api/iron-maiden/d"><b>GET /api/iron-maiden/d HTTP/1.1</b></a>
+                    </code>
+                </p>
+            </li>
+            <li>
+                /api/artist/lyrics/song_title
+                <p>
+                    Returns lyrics for song with <b>song_title</b> played by <b>artist</b>. Example:
+                    <br>
+                    <code>
+                        <br>
+                        <a href="/api/ac-dc/lyrics/jailbreak"><b>GET /api/ac-dc/lyrics/jailbreak HTTP/1.1</b></a>
+                    </code>
+                </p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
